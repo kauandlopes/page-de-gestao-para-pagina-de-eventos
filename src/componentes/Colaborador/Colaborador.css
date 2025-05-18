@@ -17,6 +17,26 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
 }
 
+.deletar {  /* <<<< NOVO */
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    transform: scale(1.1);
+    background-color: #c40000 !important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.deletar:hover {  /* <<<< NOVO */
+    transform: scale(1.1);
+    background-color: #ff0000 !important;
+}
 /* Cabeçalho com imagem */
 .cabecalho {
     height: 140px; /* Altura fixa */

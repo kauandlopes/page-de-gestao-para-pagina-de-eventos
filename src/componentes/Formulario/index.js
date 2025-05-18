@@ -17,7 +17,8 @@ const Formulario = (props) => {
             nome,
             cargo,
             imagem,
-            time
+            time,
+            id: Math.random().toString(36).substring(2, 11)  // <<<< LINHA MODIFICADA (gera ID únic
         })
         setNome('')
         setCargo('')
