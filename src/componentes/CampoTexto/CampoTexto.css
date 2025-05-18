@@ -1,19 +1,29 @@
-.campo-texto {
-    margin: 24px 0;
-}
-
 .campo-texto label {
     display: block;
-    margin-bottom: 8px;
-    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+
 }
 
 .campo-texto input {
-    background-color: #FFF;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
-    width: 100%;
-    border: none;
-    font-size: 24px;
-    padding: 24px;
-    box-sizing: border-box;
+    width: 94%;
+    padding: 16px; /* Mais espaço interno */
+    border: 2px solid #fae3c4;
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #f0b966;
+    font-size: 1rem; /* 16px */
+    transition: all 0.3s ease;
+}
+
+.campo-texto input placeholder {
+    color: #ffffff;
+}
+
+
+.campo-texto input:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.438);
+    outline: none;
 }

@@ -1,15 +1,41 @@
-.lista-suspensa label {
+.lista-suspensa {
     display: block;
-    margin-bottom: 8px;
-    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
 }
 
 .lista-suspensa select {
-    background-color: #FFF;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    margin-top: 10px;
     width: 100%;
-    border: none;
-    font-size: 24px;
-    padding: 24px;
-    box-sizing: border-box;
+    padding: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #f0b966;
+    font-size: 1rem;
+    color: #5a3e1f;
+    cursor: pointer; 
+    appearance: none; 
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FF6B35'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+
+.lista-suspensa option:hover {
+    background-color: #f0b966;
+    background: #f0b966;
+
+}
+
+.lista-suspensa select:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.438);
+    outline: none;
+
+}
+
+
+.lista-suspensa select:valid {
+    color: #ffffff; /* Cor quando uma opção válida é selecionada */
 }

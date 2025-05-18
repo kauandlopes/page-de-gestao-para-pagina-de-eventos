@@ -1,37 +1,79 @@
+/* Container principal do card */
 .colaborador {
-    width: 280px;
+    width: 320px; /* Largura fixa do card */
+    margin: 2rem; /* Espaçamento externo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden; /* Esconde conteúdo que ultrapassar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte padrão */
+    transition: transform 0.3s ease; /* Transição suave ao hover */
+    background-color: white; /* Fundo branco */
+    position: relative; /* Para posicionar elementos filhos */
 }
 
-.colaborador .cabecalho {
-    background-color:  #F0F0F0;
-    border-radius: 10px 10px 0px 0px;
-}
-.colaborador img {
-    width: 100px;
-    border-radius: 50%;
-    position: relative;
-    bottom: -50px;
+/* Efeito ao passar o mouse */
+.colaborador:hover {
+    transform: translateY(-15px); /* Levanta o card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
 }
 
-.colaborador .rodape {
-    background: #FFFFFF;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 0px 0px 10px 10px;
-    padding-top: 90px;
-    padding-bottom: 40px;
+/* Cabeçalho com imagem */
+.cabecalho {
+    height: 140px; /* Altura fixa */
+    display: flex; /* Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: relative; /* Para posicionar a linha de cor */
 }
 
-.colaborador .rodape h4 {
-    color: #6278F7;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: bold;
-    margin-bottom: 8px;
+/* Linha de cor abaixo da imagem (como na referência) */
+.cabecalho::after {
+    content: ''; /* Conteúdo vazio */
+    display: block; /* Exibe como bloco */
+    width: 100%; /* Largura total */
+    height: 10px; /* Altura da linha */
+    background-color: inherit; /* Herda a cor do cabeçalho */
+    position: absolute; /* Posiciona absolutamente */
+    bottom: 0; /* Alinha na base */
+    left: 0; /* Alinha à esquerda */
 }
 
-.colaborador .rodape h5 {
-    font-size: 18px;
-    line-height: 22px;
-    color: #212121;
-    padding: 0 16px;
+/* Imagem dentro do cabeçalho */
+.cabecalho img {
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    object-fit: cover; /* Cobrir o espaço mantendo proporções */
 }
+
+/* Rodapé com informações */
+.rodape {
+    padding: 1.0rem; /* Espaçamento interno */
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+/* Nome do curso/título */
+.rodape h4 {
+    color: #333; /* Cor escura */
+    font-size: 1.4rem; /* Tamanho médio */
+    font-weight: 6000; /* Peso semi-negrito */
+    margin-bottom: 0.01rem; /* Espaçamento abaixo */
+    margin-top : 0.1rem; /* Espaçamento abaixo */
+}
+
+/* Descrição do curso */
+.rodape h5 {
+    color: #666; /* Cor média */
+    font-size: 1rem; /* Tamanho padrão */
+    font-weight: 400; /* Peso normal */
+    margin-bottom: 0.2rem; /* Espaçamento abaixo */
+}
+
+/* Linha do tipo (Livre | Presencial) */
+.tipo {
+    color: #666; /* Cor média */
+    font-size: 0.9rem; /* Tamanho pequeno */
+    margin-bottom: 1rem; /* Espaçamento abaixo */
+    display: flex; /* Flexbox para alinhar itens */
+    gap: 0.5rem; /* Espaço entre itens */
+}
+
