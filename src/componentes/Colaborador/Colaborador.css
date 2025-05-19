@@ -1,6 +1,6 @@
 /* Container principal do card */
 .colaborador {
-    width: 320px; /* Largura fixa do card */
+    width: 280px; /* Largura fixa do card */
     margin: 2rem; /* Espaçamento externo */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
@@ -33,13 +33,14 @@
     transition: all 0.3s ease;
 }
 
-.deletar:hover {  /* <<<< NOVO */
+.deletar:hover {  
     transform: scale(1.1);
     background-color: #ff0000 !important;
 }
+
 /* Cabeçalho com imagem */
 .cabecalho {
-    height: 140px; /* Altura fixa */
+    height: 120px; /* Altura fixa */
     display: flex; /* Flexbox para centralizar */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
@@ -51,7 +52,7 @@
     content: ''; /* Conteúdo vazio */
     display: block; /* Exibe como bloco */
     width: 100%; /* Largura total */
-    height: 10px; /* Altura da linha */
+    height: 8px; /* Altura da linha */
     background-color: inherit; /* Herda a cor do cabeçalho */
     position: absolute; /* Posiciona absolutamente */
     bottom: 0; /* Alinha na base */
@@ -68,6 +69,7 @@
 /* Rodapé com informações */
 .rodape {
     padding: 1.0rem; /* Espaçamento interno */
+    margin-top: 0.2rem;
     text-align: left; /* Alinhamento à esquerda */
 }
 
@@ -85,15 +87,8 @@
     color: #666; /* Cor média */
     font-size: 1rem; /* Tamanho padrão */
     font-weight: 400; /* Peso normal */
+    margin-top: 0.4rem;
     margin-bottom: 0.2rem; /* Espaçamento abaixo */
 }
 
-/* Linha do tipo (Livre | Presencial) */
-.tipo {
-    color: #666; /* Cor média */
-    font-size: 0.9rem; /* Tamanho pequeno */
-    margin-bottom: 1rem; /* Espaçamento abaixo */
-    display: flex; /* Flexbox para alinhar itens */
-    gap: 0.5rem; /* Espaço entre itens */
-}
 

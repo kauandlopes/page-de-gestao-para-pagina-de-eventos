@@ -1,7 +1,18 @@
 .time {
-    text-align: center;
-    padding: 32px;
+  text-align: center;
+  padding: 32px;
+
+  /* Fundo: imagem cobrindo tudo sem repetição */
+  background-image:  url('/public/imagens/backgroundTriangulos.png'); /* imagem de fundo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* Estilo adicional (se quiser suavizar a sombra no conteúdo) */
+  color: white;
+  border-radius: 50px;
 }
+
 
 .time h3 {
     font-size: 32px;
@@ -13,6 +24,6 @@
 .time .colaboradores {
     display: flex;
     justify-content: space-around;
-    margin-top: 32px;
+    margin-top: 10px;
     flex-wrap: wrap;
 }
